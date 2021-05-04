@@ -15,16 +15,12 @@
         var password = document.getElementById('pass-one');
         var confirm  = document.getElementById('pass-two');
 
-        var good_color = "green";
         var bad_color = "red";
         // compare the value in password filed and confirm filed
-        if(password.value === confirm.value) {
-            password.style.borderColor = good_color;
-            confirm.style.borderColor = good_color;
-
-        }else if(password.value !== confirm.value){
+        if(password.value !== confirm.value) {
             password.style.borderColor = bad_color;
             confirm.style.borderColor = bad_color;
+
         }
     });
 
